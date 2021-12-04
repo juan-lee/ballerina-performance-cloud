@@ -85,7 +85,7 @@ jobs:
         command_timeout: '180m' #3 hours
         timeout: 300s #5 mins
         script: |
-          git clone https://github.com/xlight05/ballerina-performance-cloud
+          git clone https://github.com/juan-lee/ballerina-performance-cloud
           sudo cp -r ballerina-performance-cloud/base-image /
           sudo chmod -R 777 /base-image
           sh /base-image/init.sh
