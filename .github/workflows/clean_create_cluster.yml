@@ -36,8 +36,6 @@ jobs:
             --node-osdisk-type Managed \
             --node-count 1 \
             --location "eastus" \
-            --enable-addons monitoring \
-            --workspace-resource-id ${{ secrets.LOG_WORKSPACE }} \
             --generate-ssh-keys
     - name: Configure AKS
       uses: azure/aks-set-context@v1
